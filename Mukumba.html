@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Blitz Quiz</title>
+    <link rel="stylesheet" href="Mukumba.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <header>
+            <h1>⚡ Brain Blitz</h1>
+            <p>Challenge your brain!</p>
+        </header>
+
+        <div class="stats">
+            <div class="stat-box">
+                <span>⭐ Score</span>
+                <h2 id="score">0</h2>
+            </div>
+
+            <div class="stat-box">
+                <span>⏱️ Time</span>
+                <h2 id="timer">15</h2>
+            </div>
+
+            <div class="stat-box">
+                <span>📝 Question</span>
+                <h2 id="question-number">1/10</h2>
+            </div>
+        </div>
+
+        <div class="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+
+        <main id="quiz-area">
+            <h2 id="question">Loading question...</h2>
+
+            <div id="answers" class="answers"></div>
+
+            <p id="feedback"></p>
+
+            <button id="next-btn" class="main-btn" hidden>
+                Next Question ➜
+            </button>
+        </main>
+
+        <div id="result-screen" hidden>
+            <div class="trophy">🏆</div>
+            <h2>Quiz Completed!</h2>
+            <p>Your final score is:</p>
+            <h1 id="final-score">0/100</h1>
+            <p id="result-message"></p>
+            <button id="restart-btn" class="main-btn">
+                🔄 Play Again
+            </button>
+        </div>
+
+        <footer>
+            <p>Brain Blitz © 2026 | Think Fast. Play Smart.</p>
+        </footer>
+    </div>
+
+    <script src="Mukumba.js"></script>
+</body>
+</html>
